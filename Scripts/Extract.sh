@@ -13,7 +13,7 @@ function extract () {
       *.zip)       unzip -d `echo $1 | sed 's/\(.*\)\.zip/\1/'` $1;; 
       *.Z)         uncompress $1  ;; 
       *.7z)        7z x $1        ;; 
-      *)           echo "don't know how to extract '$1'" ;; 
+      *)           echo "I have no idea mate '$1'" ;; 
     esac 
   else 
     echo "'$1' is not a valid file!" 
